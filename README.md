@@ -5,7 +5,7 @@ This is SPA project with bootsrap and pixi
 Just run index.html to see result in brouser
 
 ## Model ##
-There is all shapes and there methods like updating, generating, collision detectiong, type conversion and color foundation.
+There is all shapes and their methods like updating, generating, collision detectiong, type conversion and color randomization.
 
 ## ViewPage ##
 This is for users clicking and page content changing.
