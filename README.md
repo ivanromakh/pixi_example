@@ -16,10 +16,12 @@ This is like controller. There is all logic.
 ## settings ##
 here you can find global variables which dictated fules like GRAVITY_VALUE.
 
+## Shapes ##
+As you can known from the name, this is all shape types for my renderer.
+
 ## index.html ##
 This is page to run this few buttons and input fields.
 
-## Shapes ##
-As you can known from the name this is all shape types for my renderer.
+So try to load and run in brouser it should work but I used online pixi so if it will be update I don't sure it will be work.
 
 Project is very simple and takes 8 hour.
