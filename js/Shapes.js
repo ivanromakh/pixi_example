@@ -12,7 +12,7 @@ class Shape extends PIXI.Graphics {
   }
 
   fillShape(cords, x, y) {
-    this.beginFill(convertToHex(getRandomColor()),1);
+    this.beginFill(Model.convertToHex(Model.getRandomColor()),1);
     this.drawPolygon(cords);
     this.x = x;
     this.y = y;
@@ -84,8 +84,7 @@ class SixSideShape extends Shape {
     const rad = this.radius;
     const halfR = rad/2;
 
-    this.beginFill(convertToHex(getRandomColor()),1);
-    this.drawPolygon([
+    this.fillShape([
       -rad, 0, 
       -halfR, -rad,
       halfR, -rad,
@@ -93,9 +92,7 @@ class SixSideShape extends Shape {
       halfR, rad,
       -halfR, rad,
     ]);
-    this.x = x;
-    this.y = y;
-    this.endFill();
+
     this.square = Math.pow(rad, 2) * 3;
   }
 }
@@ -103,7 +100,7 @@ class SixSideShape extends Shape {
 class CircleSideShape extends Shape {
   constructor(x, y) {
     super();
-    this.beginFill(convertToHex(getRandomColor()),1);
+    this.beginFill(Model.convertToHex(Model.getRandomColor()),1);
     this.drawCircle(0, 0, this.radius);
     this.endFill();
     this.x = x;
@@ -117,7 +114,7 @@ class CircleSideShape extends Shape {
 class ElipsSideShape extends Shape {
   constructor(x, y) {
     super();
-    this.beginFill(convertToHex(getRandomColor()),1);
+    this.beginFill(Model.convertToHex(Model.getRandomColor()),1);
     this.drawEllipse(0, 0, this.radius/2, this.radius);
     this.x = x;
     this.y = y;

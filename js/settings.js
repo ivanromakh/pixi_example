@@ -1,5 +1,5 @@
 const STAGE_HEIGTH = 600;       // game window height
-const STAGE_WIDRH = 400;
+const STAGE_WIDTH = 400;
 
 let GRAVITY_VALUE = 1.03;      // gravity power
 const MIN_GRAVITY_VALUE = 1.01;
@@ -17,7 +17,7 @@ let SHAPES_AREA = 0;
 
 let SHAPE_COUNT = 0;
 
-let SHAPES = [
+const SHAPES = [
   ThreeSideShape,
   RectSideShape,
   FiveSideShape,

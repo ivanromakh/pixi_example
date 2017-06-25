@@ -36,29 +36,29 @@
     <canvas id="myCanvas"  width="400" height="400"></canvas>
   </div>
   <div class="btn-group">
-    <button onclick="DecreaseSpeed()" class="btn btn-primary rounded unselectable">
+    <button onclick="View.DecreaseSpeed()" class="btn btn-primary rounded unselectable">
       -
     </button>
-    <button onclick="IncreaseSpeed()" class="btn btn-primary unselectable"> 
+    <button onclick="View.IncreaseSpeed()" class="btn btn-primary unselectable"> 
       +
     </button>
   </div>
   <input class="unselectable" id="speed" type="text" name="pin" maxlength="4" size="4" readonly>
   <div class="btn-group">
-    <button onclick="DecreasyGravity()" class="btn btn-primary unselectable"> 
+    <button onclick="View.DecreasyGravity()" class="btn btn-primary unselectable"> 
       -
     </button>
-    <button onclick="IncreaseGravity()" class="btn btn-primary unselectable"> 
+    <button onclick="View.IncreaseGravity()" class="btn btn-primary unselectable"> 
       +
     </button>
   </div>
   <input class="unselectable" id="gravity" type="text" name="pin" maxlength="4" size="4" readonly />
   <script src="js/Shapes.js"></script>
   <script src="js/settings.js"></script>
-  <script src="js/updatePage.js"></script>
-  <script src="js/events.js"></script>
+  <script src="js/ViewPage.js"></script>
   <script src="js/generateShape.js"></script>
   <script src="js/collisions.js"></script>
-  <script src="js/myview.js"></script>
+  <script src="js/Model.js"></script>
+  <script src="js/App.js"></script>
 </body>
 </html>
